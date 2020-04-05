@@ -1,0 +1,312 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> cobimr@protonmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="https://w0.pngwave.com/png/30/484/coffee-code-computer-icons-coding-png-clip-art.png" />
+
+    <!-- Put here your site title -->
+    <title>Hazem Elsayed</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <style>.swal2-popup{font-size: 1.5rem;}</style>
+
+    <!-- Remove this script once you setup your custom portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hi, my name is <span class="text-color-main">Hazem Elsayed</span>
+          <br />
+          I'm the Full-Stack Web Developer.
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="./assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                After a 4 year career in the construction industry,
+                completing 5 projects as
+                an electrical site engineer, achieving excellent
+                standards in both quality and safety. Now I am
+                seeking a career change to the programming
+                and software development field to build upon
+                a keen scientific interest and passion. Eventual
+                career goal is to become a fully-qualified and
+                experienced developer engineer, with the
+                longer-term aspiration of moving into project
+                management
+              </p>
+              <p class="about-wrapper__info-text">
+                I've been learning full stack development for 7 months 
+                and it is now my main focus. I am learning through online 
+                courses and articles, books and Meetup groups to improve 
+                myself to the best of my ability every day.
+              </p>
+              <span class="d-flex mt-3">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Projects
+          </h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Face Detection App (Under Construction)</h3>
+                <div>
+                  <p class="mb-4">
+                    This app uses a machine learning API to recognize faces.
+                    It utilizes a sign in system secured with Bcrypt password hashing.
+                    <br><br>
+                    Created With : ReactJS, CSS, NodeJS, PostgreSQL & Clarifai API
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/Zomaldinho/Face-Detection">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a>
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project1.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Top Clubs Website</h3>
+                <div>
+                  <p class="mb-4">
+                    This app is created to show the top football clubs in 8 different countries
+                    around the world (England, Spain, Germany, Italy, France, Nethrlands, Brazil, 
+                    Egypt) User can add additional clubs to any of the available 8 countries but 
+                    he can edit or delete only the ones he created previously User has to have a 
+                    Google account and logged-in to be able to add/edit/delete clubs The recent 5 
+                    added clubs are shown in the home page.
+                    <br><br>
+                    Created With : Python, CSS, HTML, PostgreSQL & Google API.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/Zomaldinho/Top-Clubs">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a>
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project2.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Robofriends App</h3>
+                <div>
+                  <p class="mb-4">
+                    A fun front-end React app that displays a friends list with a search function.
+                    <br><br>
+                    Created With : ReactJS, CSS & Robohash API.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://zomaldinho.github.io/Robofriends/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://github.com/Zomaldinho/Robofriends">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a>
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project3.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <div>
+                  <p class="mb-4">
+                    Take a baseline installation of a Linux distribution on 
+                    a virtual machine and prepare it to host the web 
+                    applications, to include installing updates, securing it 
+                    from a number of attack vectors and installing/configuring 
+                    web and database servers.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" 
+                  href="https://github.com/Zomaldinho/Deploying-to-Linux-Servers">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a>
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/project4.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <!-- <section id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          Contact
+        </h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            [Put your call to action here]
+          </p>
+          <a
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:example@email.com"
+            >Call to Action</a
+          >
+        </div>
+      </div>
+    </section> -->
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/hazem-ahmed-093" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/Zomaldinho" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a onclick="execute()" >
+            <i class="fa fa-envelope fa-inverse"></i>
+          </a>
+          <a href="https://www.facebook.com/Hazem0014" target="_blank">
+            <i class="fa fa-facebook fa-inverse"></i>
+          </a>
+          <a href="https://www.instagram.com/zomaldinho/" target="_blank">
+            <i class="fa fa-instagram fa-inverse"></i>
+          </a>
+        </div>
+        <script>
+          const execute = ()=> Swal.fire('My Email','hazem_ahmed_93@yahoo.com','info')
+        </script>
+        <hr />
+
+        <!-- If you give me some credit, will be huge for me :) -->
+        <p class="footer__text">
+          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
+</html>
